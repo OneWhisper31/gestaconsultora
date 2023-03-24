@@ -1,140 +1,223 @@
 body {
   margin: 0;
-  font-family: "Nunito",Arial, Helvetica, sans-serif;
-  background-color: #CAF0F8;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  background-color: #c8c8c8;
+  background-color: #333;
 }
+
 .header {
-  background-color: #03045E;
-  color: #03045E;
+  background-color: #fbfbfb;
   padding: 0.2em;
   text-align: center;
-  background-color: #00B4D8;
   min-height: 6em;
+  width: 100%;
 }
+
 .nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
+  /* background-color: #333; */
   overflow: hidden;
   padding-top: 0.5em;
   padding: 0;
-  margin: 0;
+  margin: auto;
   list-style: none;
 }
-.nav div{
-  flex: 1;
-  text-align: center;
-}
-.nav a {
-  color: #f3f3f3;
-  display: block;
-  padding: 1rem;
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-.nav a:hover {
-  background-color: #ddd;
-  color: #03045E;
-}
+
 .landing {
   padding: 50px;
   text-align: center;
 }
-.empty-box{
-  background-color: #03045E;
+
+.empty-box {
+  background-color: #000000;
   padding-bottom: 0.3em;
   max-width: 7em;
-  border-radius: 0.1em;
-  margin: 2em 0em ;
+  border-radius: 1em;
+  margin: 2em 0em;
 }
-.descripcion{
-  margin-left:20em;
+
+.descripcion {
+  background-color: #c8c8c8;
 }
-.descripcion p{
+
+.descripcion p {
   max-width: 65%;
 }
-.footer {
-  background-color: #333;
-  color: #fff;
-  padding: 2em;
-  text-align: center;
-}
-.ul{
+
+.ul {
   display: flex;
   text-decoration: none;
   background-color: #0077B6;
   padding: 2em 1.5em;
   margin: 0;
 }
-.footer-ul{
+
+.footer-ul {
   display: flex;
   text-decoration: none;
   padding: 2em 1.5em;
   margin: 0;
 }
-.ul li{
+
+.ul li {
   list-style-type: none;
   margin: 2em;
 }
-.ul h4{
+
+.ul h4 {
   font-size: 2em;
 }
-.footer-li-text{
+
+.footer-li-text {
   background-color: #333;
   color: #fff;
   padding: 2em;
   text-align: center;
   list-style-type: none;
   max-width: 20%;
-  
+
 }
-.footer-li-img{
+
+.footer-li-img {
   list-style-type: none;
   max-width: 80%;
   padding: 0em 20em;
 }
-.panel h2{
-  text-align:start;
+
+.panel h2 {
+  text-align: start;
   justify-content: center;
   text-transform: uppercase;
   font-weight: bolder;
   text-shadow: 0.2em;
 }
-.panel p{
-  text-align:start;
+
+.panel p {
+  text-align: start;
   justify-content: center;
 }
-.logo{
-  width: 10%;
-  padding: 1%;
-  min-width: 10em;
+.panel {
+  text-decoration: none;
+  display: flex;
+  padding: 7% 0;
+  margin: 0 10%;
 }
 
-.panel{
-  text-decoration: none;
-  padding: 7% 0;
-}
-.column{
+.column {
   text-align: center;
   justify-content: center;
   list-style-type: none;
 }
-.column-text{
+
+.column-text {
   margin: 1em auto;
   max-width: 80%;
 }
 
-@media (max-width: 900px){
+.footer{
+  color: #fff;
+  background-color: #333;
+  align-self: start;
+  width: 100%;
+}
+
+.container {
+  max-width: 100% !important;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin:0;
+  padding: 1em 5em;
+}
+
+.logo {
+  justify-content: center;
+  align-items: center;
+  margin: 2em;
+  padding-top: 1em;
+  
+}
+.logo img{
+  width: 15em;
+}
+
+.social-buttons {
+  margin-left: auto;
+}
+.social-buttons-ul{
+  list-style: none;
+  text-align: center;
+}
+.social-buttons-li{
+  margin: 1em;
+}
+
+@media (max-width: 900px) {
+  .panel {
+    text-decoration: none;
+    padding: 15% 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav a {
+    flex: 0 0 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .panel {
+    text-decoration: none;
+    padding: 15% 0;
+  }
+}
+@media (max-width: 1100px) {
+  .descripcion p{
+    max-width: 100% !important;
+    font-size:1em;
+  }
+  .descripcion img{
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
   .panel{
-      text-decoration: none;
-      padding: 15% 0;
+    display: inline;
+    padding: 30em;
   }
+  .column-1 {
+    max-width: 100% !important;
   }
-  @media screen and (max-width: 600px) {
-    .nav a{
-      flex: 0 0 100%;
-    }
+  .column-2 {
+    max-width: 100% !important;
   }
+  .descripcion{
+    padding: 0;
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+}
+@media (max-width: 770px) {
+
+  .container{
+    padding-left: 2em;
+    padding-right: 0em;
+    flex-direction:column;
+  }
+  .social-buttons{
+    margin: 0;
+    align-items: start;
+  }
+  .social-buttons-ul{
+    padding: 0;
+  }
+  .social-buttons-li{
+    padding: 0;
+    align-items: start;
+    display: flex;
+  }
+
+}
