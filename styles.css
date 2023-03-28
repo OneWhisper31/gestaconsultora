@@ -6,11 +6,16 @@ body {
 }
 
 .header {
-  background-color: #fbfbfb;
+  background-color: #ffffff;
   padding: 0.2em;
   text-align: center;
   min-height: 6em;
   width: 100%;
+  
+}
+.header img{
+  width: 40%;
+  
 }
 
 .nav {
@@ -137,12 +142,11 @@ body {
 .logo {
   justify-content: center;
   align-items: center;
-  margin: 2em;
   padding-top: 1em;
   
 }
 .logo img{
-  width: 15em;
+  width: 25em;
 }
 
 .social-buttons {
