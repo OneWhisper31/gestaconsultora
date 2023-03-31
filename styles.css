@@ -116,6 +116,9 @@ body {
   justify-content: center;
   list-style-type: none;
 }
+.column p{
+  text-align: justify;
+}
 
 .column-text {
   margin: 1em auto;
